@@ -1,0 +1,81 @@
+body {
+    background-color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 350px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0px;
+}
+
+/* settings related */
+.config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1024px;
+    width: 300px;
+}
+
+button {
+    padding: 40px;
+}
+
+button.active {
+    box-shadow: 10px 10px 10px black;
+}
+
+input {
+    width: 80px;
+    height: 80px;
+    border-color: black;
+}
+
+button,
+input {
+    background-color: aliceblue;
+    width: 75%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 10px;
+}
+
+button:hover,
+input:hover {
+    transform: scale(1.1);
+}
+
+.grid-size {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* grid related */
+.grid-container {
+    display: grid;
+    height: 960px;
+    width: 960px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 10px 10px;
+}
+
+.pixel {
+    /* user-select: none; */
+    border-color: black;
+}
+
